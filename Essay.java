@@ -1,0 +1,21 @@
+public class Essay extends GradedActivity{
+    int Grammar = 30;
+    int Spelling = 20;
+    int Length = 20;
+    int Content = 30;
+    
+    public void setScore (int g, int s, int l, int c) {
+        Grammar = g;
+        Spelling = s;
+        Length = l;
+        Content = c;
+    }
+
+    public double setScore() {
+        return super.getScore();
+    }
+
+    public double getScore() {
+        return super.getScore();
+    }
+}
