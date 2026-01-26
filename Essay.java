@@ -9,13 +9,7 @@ public class Essay extends GradedActivity{
         Spelling = s;
         Length = l;
         Content = c;
-    }
 
-    public double setScore() {
-        return super.getScore();
-    }
-
-    public double getScore() {
-        return super.getScore();
+        super.setScore(Grammar + Spelling + Length + Content);
     }
 }
