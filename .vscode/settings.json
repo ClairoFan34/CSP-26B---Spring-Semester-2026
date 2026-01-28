@@ -1,0 +1,8 @@
+{
+    "code-runner.executorMap": {
+        "java": "cd $dir; javac *.java; cd ..; java Week1_2InheritanceLab.$fileNameWithoutExt"
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "code-runner.clearPreviousOutput": false
+}

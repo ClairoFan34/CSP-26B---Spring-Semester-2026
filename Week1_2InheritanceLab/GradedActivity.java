@@ -1,3 +1,5 @@
+package Week1_2InheritanceLab;
+
 /**
    A class that holds a grade for a graded activity.
 */

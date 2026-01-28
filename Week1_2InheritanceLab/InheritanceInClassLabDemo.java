@@ -1,3 +1,5 @@
+package Week1_2InheritanceLab;
+
 public class InheritanceInClassLabDemo {
     public static void main(String[] args) {
         CourseGrades course = new CourseGrades();

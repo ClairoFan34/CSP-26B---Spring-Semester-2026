@@ -1,23 +1,33 @@
+package Week1_2InheritanceLab;
+
 /**
-   This class determines the grade for a final exam.
+   This class determines a passing or failing grade for
+   an exam.
 */
 
-public class FinalExam extends GradedActivity
+public class PassFailExam extends PassFailActivity
 {
    private int numQuestions;  // Number of questions
    private double pointsEach; // Points for each question
-   private int numMissed;     // Questions missed
+   private int numMissed;     // Number of questions missed
 
    /**
-      The constructor sets the number of questions on the
-      exam and the number of questions missed.
+      The constructor sets the number of questions, the
+      number of questions missed, and the minimum passing
+      score.
       @param questions The number of questions.
       @param missed The number of questions missed.
+      @param minPassing The minimum passing score.
    */
 
-   public FinalExam(int questions, int missed)
+   public PassFailExam(int questions, int missed, 
+                       double minPassing)
    {
-      double numericScore;  // To hold a numeric score
+      // Call the superclass constructor.
+      super(minPassing);
+
+      // Declare a local variable for the score.
+      double numericScore;
 
       // Set the numQuestions and numMissed fields.
       numQuestions = questions;
@@ -28,7 +38,7 @@ public class FinalExam extends GradedActivity
       pointsEach = 100.0 / questions;
       numericScore = 100.0 - (missed * pointsEach);
 
-      // Call the inherited setScore method to
+      // Call the superclass's setScore method to
       // set the numeric score.
       setScore(numericScore);
    }

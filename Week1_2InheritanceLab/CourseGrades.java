@@ -1,3 +1,5 @@
+package Week1_2InheritanceLab;
+
 public class CourseGrades {
     GradedActivity[] grades = new GradedActivity[4];
 
