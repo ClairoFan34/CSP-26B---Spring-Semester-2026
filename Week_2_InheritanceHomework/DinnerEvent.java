@@ -7,8 +7,12 @@ public class DinnerEvent {
     private int sideDishTwo;
     private int dessert;
 
-    public int getEventType() { 
-        return eventType; 
+    //All event types
+    public final String[] eventTypes = {"Wedding", "Birthday", "Corporate"};
+
+    //All setters and getters
+    public String getEventType() { 
+        return eventTypes[eventType]; 
     }
     public void setEventType(int eventType) { 
         this.eventType = eventType; 
