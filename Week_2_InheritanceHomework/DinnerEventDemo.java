@@ -27,7 +27,7 @@ public class DinnerEventDemo {
         DinnerEvent event = new DinnerEvent(eventNum, name, guests, entree, side1, side2, dessert);
 
         // Calculating and assigning employees
-        // Waitstaff: 1 per 10 guests (minimum 1)
+        // Waitstaff: 1 per 10 guests 
         int numWaitstaff = (guests / 10) + 1;
         // Bartenders: 1 per 25 guests
         int numBartenders = guests / 25;
@@ -43,7 +43,7 @@ public class DinnerEventDemo {
         for (int i = 0; i < totalEmployees; i++) {
             Employee emp;
 
-            // Determine type of employee to create based on counts
+            // Determine type of employee to create based on the count
             if (i < numWaitstaff) {
                 emp = new Waitstaff();
             } 
@@ -54,7 +54,7 @@ public class DinnerEventDemo {
                 emp = new Coordinator();
             }
 
-            // Prompt for common Employee data
+            // Prompt for the Employee data
             System.out.print("Enter ID for " + emp.getClass().getSimpleName() + ": ");
             emp.setEmployeeID(input.nextInt());
             input.nextLine(); // Consume newline
@@ -68,7 +68,7 @@ public class DinnerEventDemo {
             event.Employees[employeeIndex++] = emp;
         }
 
-        // Final Output Summary
+        // Final summary
         System.out.println("\nEvent Summary: ");
         System.out.println("Event Name: " + event.getEventName() + " (Type: " + event.getEventType() + ")");
         System.out.println("Staff assigned: " + numWaitstaff + " Waitstaff, " + numBartenders + " Bartenders, and " + numCoordinators + " Coordinator.");
