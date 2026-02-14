@@ -1,5 +1,3 @@
-package Week1_2InheritanceLab;
-
 /**
    This class holds a numeric score and determines
    whether the score is passing or failing.

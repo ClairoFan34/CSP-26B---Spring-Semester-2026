@@ -1,5 +1,3 @@
-package Week1_2InheritanceLab;
-
 /**
    This class determines a passing or failing grade for
    an exam.

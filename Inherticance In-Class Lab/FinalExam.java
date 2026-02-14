@@ -1,5 +1,3 @@
-package Week1_2InheritanceLab;
-
 /**
    This class determines the grade for a final exam.
 */

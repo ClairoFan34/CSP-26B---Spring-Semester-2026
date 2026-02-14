@@ -1,5 +1,3 @@
-package Week1_2InheritanceLab;
-
 public class Essay extends GradedActivity{
     int Grammar = 30;
     int Spelling = 20;
