@@ -15,10 +15,8 @@ public class expressionsStackDemo {
         for (int i = 0; i < exp.length(); i++) {
             ch = exp.charAt(i);
 
-            // Skip spaces
             if (ch == ' ') continue;
 
-            // 🔢 MULTI-DIGIT NUMBER
             if (Character.isDigit(ch)) {
                 int num = 0;
 
@@ -40,13 +38,9 @@ public class expressionsStackDemo {
         }
 
         System.out.println("Result: " + numbers.pop());
-        
 
-        
-    } 
-}
-
-public static int precedence(char operator) {
+    }
+    public static int precedence(char operator) {
     if (operator == '^') 
             return 3;
     if (operator == '*' || operator == '/') 
@@ -70,4 +64,6 @@ public static int useOperator(int a, int b, char operator) {
             return (int)Math.pow(a, b);
     }
     return 0;
+} 
 }
+
