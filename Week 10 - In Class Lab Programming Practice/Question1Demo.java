@@ -35,7 +35,7 @@ public class Question1Demo {
                     System.out.println("Exiting program");
                     break;
                 default:
-                    System.out.println("Invalid choice, try again.");
+                    System.out.println("Invalid choice, try again");
             }
         }
     }

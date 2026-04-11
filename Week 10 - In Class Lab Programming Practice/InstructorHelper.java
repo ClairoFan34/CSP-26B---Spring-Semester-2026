@@ -23,9 +23,9 @@ public class InstructorHelper {
         Instructor newInstructor = new Instructor(id, first, last, office, dept);
         
         if (Instructors.add(newInstructor)) 
-            System.out.println("Instructor added successfully!");
+            System.out.println("Instructor added successfully");
         else 
-            System.out.println("Error: An instructor with that ID already exists.");
+            System.out.println("Error: An instructor with that ID already exists");
     }
 
     public void searchInstructor(int idToFind) {

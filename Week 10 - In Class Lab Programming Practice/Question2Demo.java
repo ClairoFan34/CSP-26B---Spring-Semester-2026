@@ -9,8 +9,8 @@ public class Question2Demo {
         System.out.println("Instructor Management Demo with Map");
 
         while (running == true) {
-            System.out.println("1. Add Instructor ID and Office Number");
-            System.out.println("2. Search Office by Instructor ID");
+            System.out.println("1. Add instructor ID and office number");
+            System.out.println("2. Search office by instructor ID");
             System.out.println("3. End ");
             System.out.print("Choose an option: ");
             
@@ -31,7 +31,7 @@ public class Question2Demo {
                     System.out.println("Exiting program");
                     break;
                 default:
-                    System.out.println("Invalid choice, try again.");
+                    System.out.println("Invalid choice, try again");
             }
         }
     }

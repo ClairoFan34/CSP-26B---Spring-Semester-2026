@@ -14,7 +14,7 @@ public class InstructorMap {
         input.nextLine();
 
         instructorMap.put(id, office);
-        System.out.println("Entry added to map successfully.");
+        System.out.println("Entry added to map successfully");
     }
 
     public void searchMap(int id) {
@@ -23,6 +23,6 @@ public class InstructorMap {
             System.out.println("Instructor ID " + id + " is located in Office: " + office);
         } 
         else
-            System.out.println("ID " + id + " not found in the Map.");
+            System.out.println("ID " + id + " not found in the Map");
     }
 }
