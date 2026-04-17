@@ -28,7 +28,6 @@ public class hashTable {
 
         LinkedList<entry> bucket = Buckets.get(index);
 
-        // optional: update if key already exists
         for (entry node : bucket) {
             if (node.key == key) {
                 node.value = value;
@@ -40,21 +39,21 @@ public class hashTable {
     }
 
     public void printTable() {
-    for (int i = 0; i < n; i++) {
-        System.out.print("Bucket " + i + ": ");
+        for (int i = 0; i < n; i++) {
+            System.out.print("Bucket " + i + ": ");
 
-        LinkedList<entry> bucket = Buckets.get(i);
+            LinkedList<entry> bucket = Buckets.get(i);
 
-        if (bucket.isEmpty()) {
+            if (bucket.isEmpty()) {
+                System.out.println("empty");
+                continue;
+            }
+
+            for (entry element : bucket) {
+                System.out.print("(" + element.key + ", " + element.value + ") -> ");
+            }
+
             System.out.println("empty");
-            continue;
         }
-
-        for (entry element : bucket) {
-            System.out.print("(" + element.key + ", " + element.value + ") -> ");
-        }
-
-        System.out.println("empty");
     }
-}
 }
